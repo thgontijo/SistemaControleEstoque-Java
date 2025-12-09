@@ -1,36 +1,31 @@
-🏪 Sistema de Controle de Estoque (Java)
+# 🏪 Sistema de Controle de Estoque (Java)
 
-Projeto em Java para gerenciar produtos, permitindo cadastro, consulta, atualização de estoque e remoção. Usa listas, ordenação, busca por ID, validações e tratamento de exceções.
+Aplicação em Java para gerenciar produtos, permitindo cadastro, listagem, atualização de estoque, busca e remoção. O sistema utiliza coleções, ordenação, validações e tratamento de exceções para garantir integridade dos dados.
 
-🚀 Funcionalidades
+---
 
-Cadastrar produtos com ID, nome e quantidade
+## 🚀 Funcionalidades
 
-Listar produtos ordenados por ID ou nome
+- Cadastro de produtos com **ID**, **nome**, **preço** e **quantidade**
+- Aumento ou redução de estoque
+- Bloqueio de operações que gerem quantidade negativa
+- Verificação de existência antes de modificar estoque
+- Remoção de produto informando apenas o ID
+- Tratamento de exceções e validação das entradas do usuário
 
-Aumentar ou diminuir estoque
+---
 
-Validação para impedir quantidade negativa
+## 💻 Tecnologias Utilizadas
 
-Verificação antes de reduzir estoque
+- **Java**
+- **Collections API** (List, Comparator)
+- **Scanner**
 
-Buscar produto pelo ID
+---
 
-Remover produto informando apenas o ID
+## 📦 Instalação
 
-Persistência opcional (se você tiver implementado)
-
-Tratamento de exceções e validação de entradas do usuário
-
-💻 Tecnologias
-
-Java
-
-Collections API (List, Comparator)
-
-Scanner (entrada do usuário)
-
-📦 Instalação
+```bash
 # Clonar o repositório
 git clone https://github.com/thgontijo/sistema-estoque-java.git
 
@@ -42,38 +37,37 @@ javac -d bin src/**/*.java
 
 # Executar o projeto
 java -cp bin main.Main
+```
+---
 
-📝 Como usar
+## 📝 Como Usar
 
-Execute o programa.
+1. Execute o programa.
+2. Escolha uma opção do menu:
+   - Cadastrar produto
+   - Listar produtos
+   - Atualizar estoque (aumentar ou diminuir)
+   - Buscar produto por ID
+   - Remover produto
 
-Escolha uma das opções do menu:
+3. Para atualizar o estoque:
+   - Informe o **ID**
+   - O sistema verifica se o produto existe
+   - O sistema valida se a alteração é permitida  
+     (ex.: impedir quantidade negativa)
 
-Cadastrar produto
+A lista permanece sempre ordenada após qualquer modificação.
 
-Listar produtos
+---
 
-Atualizar estoque (aumentar ou diminuir)
+## 👨‍💻 Autor
 
-Remover produto
+**Thyago Gontijo**  
+GitHub: https://github.com/thgontijo
 
-Buscar por ID
+---
 
-Para atualizar estoque:
+## ⚠️ Aviso
 
-Informe o ID
-
-O sistema valida se o produto existe
-
-Depois valida se a operação é possível (ex.: não deixar quantidade negativa)
-
-O sistema mantém a lista sempre ordenada (se configurado dessa forma).
-
-👨‍💻 Autor
-
-Thyago Gontijo – GitHub: https://github.com/thgontijo
-
-⚠️ Aviso
-
-Este projeto foi desenvolvido apenas para aprendizado pessoal, prática da API de coleções do Java e reforço de lógica de programação.
-Não deve ser usado como sistema de estoque real em ambientes comerciais.
+Este projeto foi desenvolvido exclusivamente para estudo e prática da API de coleções do Java.  
+Não deve ser utilizado como sistema real de controle de estoque em ambientes comerciais.
