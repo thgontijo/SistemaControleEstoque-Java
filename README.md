@@ -1,4 +1,4 @@
-# 🏪 Sistema de Controle de Estoque (Java)
+# 🏪 Sistema de Controle de Estoque Java
 
 Aplicação em Java para gerenciar produtos, permitindo cadastro, listagem, atualização de estoque, busca e remoção. O sistema utiliza coleções, ordenação, validações e tratamento de exceções para garantir integridade dos dados.
 
